@@ -1,0 +1,56 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+client/node_modules
+client/.pnp
+client/.pnp.js
+
+# testing
+client/coverage
+
+client/stacks
+
+# production
+client/build
+
+# misc
+client/.DS_Store
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+.env*
+
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+
+client/out
+client/public/fonts/*
+client/src/assets/icons/fonts/*
+client/.idea
+client/.storybook-out/
+client/cypress/videos
+client/cypress/screenshots
+client/cypress.env.json
+client/results/
+
+
+client/docker/*.pem
+client/docker/nginx.conf
+client/docker/nginx-root.conf
+
+client/storybook-static/*
+build-storybook.log
+
+client/.eslintcache
+client/.vscode
+TODO
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+

@@ -1,0 +1,5 @@
+{
+	"src/**/*.tsx": ["npx eslint --fix", "npx prettier --write"],
+	"cypress/**/*.js": ["npx eslint --fix", "npx prettier --write"],
+	"src/**/*.ts": ["npx eslint --fix", "npx prettier --write"]
+}

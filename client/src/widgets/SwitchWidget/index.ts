@@ -1,0 +1,34 @@
+import IconSVG from "./icon.svg";
+import Widget from "./widget";
+import { LabelPosition } from "components/constants";
+import { AlignWidgetTypes } from "widgets/constants";
+
+export const CONFIG = {
+  type: Widget.getWidgetType(),
+  name: "开关",
+  iconSVG: IconSVG,
+  needsMeta: true,
+  searchTags: ["boolean"],
+  defaults: {
+    label: "标签",
+    rows: 4,
+    columns: 12,
+    defaultSwitchState: true,
+    widgetName: "Switch",
+    alignWidget: AlignWidgetTypes.LEFT,
+    labelPosition: LabelPosition.Left,
+    version: 1,
+    isDisabled: false,
+    animateLoading: true,
+  },
+  properties: {
+    derived: Widget.getDerivedPropertiesMap(),
+    default: Widget.getDefaultPropertiesMap(),
+    meta: Widget.getMetaPropertiesMap(),
+    config: Widget.getPropertyPaneConfig(),
+    contentConfig: Widget.getPropertyPaneContentConfig(),
+    styleConfig: Widget.getPropertyPaneStyleConfig(),
+  },
+};
+
+export default Widget;
